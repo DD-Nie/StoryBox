@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qkx-M3-b2o" userLabel="itemImageView"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fnY-Rh-wYG" userLabel="frameImageView"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-6k-bcL" userLabel="decorate Image View">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="S1a-Gb-42f"/>
+                            <constraint firstAttribute="width" constant="25" id="x5m-jD-RFt"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NgY-6k-bcL" secondAttribute="bottom" constant="5" id="76Y-Hr-hxv"/>
+                <constraint firstAttribute="trailing" secondItem="NgY-6k-bcL" secondAttribute="trailing" constant="5" id="CoB-d0-3ng"/>
+                <constraint firstAttribute="bottom" secondItem="fnY-Rh-wYG" secondAttribute="bottom" id="Cp6-qi-vxJ"/>
+                <constraint firstAttribute="trailing" secondItem="fnY-Rh-wYG" secondAttribute="trailing" id="DLK-qn-735"/>
+                <constraint firstItem="fnY-Rh-wYG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GKy-Hd-iL9"/>
+                <constraint firstAttribute="trailing" secondItem="Qkx-M3-b2o" secondAttribute="trailing" id="NSj-L1-6EP"/>
+                <constraint firstItem="fnY-Rh-wYG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XBe-PV-1As"/>
+                <constraint firstAttribute="bottom" secondItem="Qkx-M3-b2o" secondAttribute="bottom" id="Y8w-oB-1qS"/>
+                <constraint firstItem="Qkx-M3-b2o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="faS-C8-LrO"/>
+                <constraint firstItem="Qkx-M3-b2o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="i7A-7G-piV"/>
+            </constraints>
+            <size key="customSize" width="302" height="263"/>
+            <connections>
+                <outlet property="decorateImageView" destination="NgY-6k-bcL" id="aKW-Wp-XGW"/>
+                <outlet property="frameImageView" destination="fnY-Rh-wYG" id="RtZ-Rj-Nrt"/>
+                <outlet property="itemImageView" destination="Qkx-M3-b2o" id="n3a-xJ-cYG"/>
+            </connections>
+            <point key="canvasLocation" x="-128" y="35.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
